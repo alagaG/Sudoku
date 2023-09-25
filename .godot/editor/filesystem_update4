@@ -1,0 +1,9 @@
+res://game.tscn
+res://Grid.gd
+res://grid/number.tscn
+res://grid/Number.tscn
+res://grid/Number.gd
+res://grid/Grid.gd
+res://grid/Selector.tscn
+res://grid/Selector.gd
+res://grid/Buttons.gd
