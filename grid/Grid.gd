@@ -1,11 +1,25 @@
+class_name Grid
 extends GridContainer
 
-const NumberScene : PackedScene = preload("res://grid/Number.tscn")
+const NumberScene : PackedScene = preload("res://grid/number.tscn")
+var pos : Vector2 = Vector2.ZERO
 
-func _ready():
-	for i in range(9):
-		for j in range(9):
-			var child = NumberScene.instantiate()
-			child.grid_x = j
-			child.grid_y = i
-			add_child(child)
+signal slot_selected(slot:NumberSlot)
+
+func initialize():
+	for idx in get_child_count():
+		var child = get_child(idx) as NumberSlot
+		var child_x = idx % 3
+		var child_y = floor(idx / 3) * 9
+		child.index = (pos.x * 3) + (pos.y * 27) + child_x + child_y
+		child.name = "Number-{0}".format([child.index])
+		child.connect("selected", request_selection)
+
+func generate():
+	var numbers = range(9)
+	for child in get_children():
+		numbers.shuffle()
+		child.assign(numbers.pop_front() + 1)
+
+func request_selection(slot:NumberSlot):
+	emit_signal("slot_selected", slot)

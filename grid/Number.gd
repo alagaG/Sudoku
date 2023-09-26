@@ -1,8 +1,17 @@
-class_name Number
+class_name NumberSlot
 extends Button
 
-var grid_x : int = 0
-var grid_y : int = 0
+var index : int = -1
+var value : int = 0
+
+signal selected(slot:NumberSlot)
 
 func _ready():
-	name = "Number - {x}, {y}".format({ "x": grid_x, "y": grid_y})
+	connect("button_down", _on_down)
+
+func _on_down():
+	emit_signal("selected", self)
+
+func assign(number:int):
+	text = str(number)
+	value = number

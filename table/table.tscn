@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://tajyogvb0xh6"]
+
+[ext_resource type="Script" path="res://table/table.gd" id="1_r7mkm"]
+[ext_resource type="PackedScene" uid="uid://cqbwp51q8mamt" path="res://grid/grid.tscn" id="2_sodqp"]
+
+[node name="Table" type="GridContainer"]
+theme_override_constants/h_separation = 15
+theme_override_constants/v_separation = 15
+columns = 3
+script = ExtResource("1_r7mkm")
+
+[node name="Grid 0" parent="." instance=ExtResource("2_sodqp")]
+layout_mode = 2
+
+[node name="Grid 1" parent="." instance=ExtResource("2_sodqp")]
+layout_mode = 2
+
+[node name="Grid 2" parent="." instance=ExtResource("2_sodqp")]
+layout_mode = 2
+
+[node name="Grid 3" parent="." instance=ExtResource("2_sodqp")]
+layout_mode = 2
+
+[node name="Grid 4" parent="." instance=ExtResource("2_sodqp")]
+layout_mode = 2
+
+[node name="Grid 5" parent="." instance=ExtResource("2_sodqp")]
+layout_mode = 2
+
+[node name="Grid 6" parent="." instance=ExtResource("2_sodqp")]
+layout_mode = 2
+
+[node name="Grid 7" parent="." instance=ExtResource("2_sodqp")]
+layout_mode = 2
+
+[node name="Grid 8" parent="." instance=ExtResource("2_sodqp")]
+layout_mode = 2
