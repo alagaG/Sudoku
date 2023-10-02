@@ -15,11 +15,5 @@ func initialize():
 		child.name = "Number-{0}".format([child.index])
 		child.connect("selected", request_selection)
 
-func generate():
-	var numbers = range(9)
-	for child in get_children():
-		numbers.shuffle()
-		child.assign(numbers.pop_front() + 1)
-
 func request_selection(slot:NumberSlot):
 	emit_signal("slot_selected", slot)

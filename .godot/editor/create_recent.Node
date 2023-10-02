@@ -1,10 +1,12 @@
-Node
-GridContainer
 Button
-TextureButton
-NumberSlot
 HBoxContainer
 VBoxContainer
+VSeparator
+MarginContainer
+Node
+GridContainer
+TextureButton
+NumberSlot
 CenterContainer
 Label
 TextureRect

@@ -13,5 +13,7 @@ func _on_down():
 	emit_signal("selected", self)
 
 func assign(number:int):
-	text = str(number)
 	value = number
+
+func is_empty() -> bool:
+	return value <= 0

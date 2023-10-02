@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cqbwp51q8mamt"]
 
 [ext_resource type="Script" path="res://grid/grid.gd" id="1_h1vhy"]
-[ext_resource type="PackedScene" uid="uid://wgsknohpt2lt" path="res://grid/number.tscn" id="1_tbst7"]
+[ext_resource type="PackedScene" uid="uid://wgsknohpt2lt" path="res://grid/Number.tscn" id="1_tbst7"]
 
 [node name="Grid" type="GridContainer"]
 anchors_preset = 15

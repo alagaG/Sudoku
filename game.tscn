@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://d3y3rhyjcbafj"]
 
 [ext_resource type="Script" path="res://game.gd" id="1_67g76"]
-[ext_resource type="PackedScene" uid="uid://tajyogvb0xh6" path="res://table/Table.tscn" id="2_2wal4"]
-[ext_resource type="PackedScene" uid="uid://cgkiojvo03c4a" path="res://grid/selector.tscn" id="2_or3w0"]
+[ext_resource type="PackedScene" uid="uid://tajyogvb0xh6" path="res://table/table.tscn" id="2_2wal4"]
+[ext_resource type="PackedScene" uid="uid://cgkiojvo03c4a" path="res://grid/Selector.tscn" id="2_or3w0"]
 
 [node name="Game" type="Node"]
 script = ExtResource("1_67g76")
@@ -14,6 +14,18 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="Buttons2" type="MarginContainer" parent="VDividor"]
+layout_mode = 2
+theme_override_constants/margin_top = 25
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VDividor/Buttons2"]
+layout_mode = 2
+alignment = 1
+
+[node name="Button" type="Button" parent="VDividor/Buttons2/HBoxContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+
 [node name="Center" type="CenterContainer" parent="VDividor"]
 layout_mode = 2
 size_flags_horizontal = 3
@@ -22,42 +34,46 @@ size_flags_vertical = 3
 [node name="Table" parent="VDividor/Center" instance=ExtResource("2_2wal4")]
 layout_mode = 2
 
-[node name="Buttons" type="HBoxContainer" parent="VDividor"]
+[node name="Buttons" type="MarginContainer" parent="VDividor"]
+layout_mode = 2
+theme_override_constants/margin_bottom = 25
+
+[node name="Selectors" type="HBoxContainer" parent="VDividor/Buttons"]
 layout_mode = 2
 alignment = 1
 
-[node name="Selector - 1" parent="VDividor/Buttons" instance=ExtResource("2_or3w0")]
+[node name="Selector - 1" parent="VDividor/Buttons/Selectors" instance=ExtResource("2_or3w0")]
 layout_mode = 2
 number = 1
 
-[node name="Selector - 2" parent="VDividor/Buttons" instance=ExtResource("2_or3w0")]
+[node name="Selector - 2" parent="VDividor/Buttons/Selectors" instance=ExtResource("2_or3w0")]
 layout_mode = 2
 number = 2
 
-[node name="Selector - 3" parent="VDividor/Buttons" instance=ExtResource("2_or3w0")]
+[node name="Selector - 3" parent="VDividor/Buttons/Selectors" instance=ExtResource("2_or3w0")]
 layout_mode = 2
 number = 3
 
-[node name="Selector - 4" parent="VDividor/Buttons" instance=ExtResource("2_or3w0")]
+[node name="Selector - 4" parent="VDividor/Buttons/Selectors" instance=ExtResource("2_or3w0")]
 layout_mode = 2
 number = 4
 
-[node name="Selector - 5" parent="VDividor/Buttons" instance=ExtResource("2_or3w0")]
+[node name="Selector - 5" parent="VDividor/Buttons/Selectors" instance=ExtResource("2_or3w0")]
 layout_mode = 2
 number = 5
 
-[node name="Selector - 6" parent="VDividor/Buttons" instance=ExtResource("2_or3w0")]
+[node name="Selector - 6" parent="VDividor/Buttons/Selectors" instance=ExtResource("2_or3w0")]
 layout_mode = 2
 number = 6
 
-[node name="Selector - 7" parent="VDividor/Buttons" instance=ExtResource("2_or3w0")]
+[node name="Selector - 7" parent="VDividor/Buttons/Selectors" instance=ExtResource("2_or3w0")]
 layout_mode = 2
 number = 7
 
-[node name="Selector - 8" parent="VDividor/Buttons" instance=ExtResource("2_or3w0")]
+[node name="Selector - 8" parent="VDividor/Buttons/Selectors" instance=ExtResource("2_or3w0")]
 layout_mode = 2
 number = 8
 
-[node name="Selector - 9" parent="VDividor/Buttons" instance=ExtResource("2_or3w0")]
+[node name="Selector - 9" parent="VDividor/Buttons/Selectors" instance=ExtResource("2_or3w0")]
 layout_mode = 2
 number = 9
