@@ -1,0 +1,57 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqbwp51q8mamt"]
+
+[ext_resource type="PackedScene" uid="uid://wgsknohpt2lt" path="res://sudoku/number_slot.tscn" id="1_tbst7"]
+[ext_resource type="ButtonGroup" uid="uid://r5s8byb81naf" path="res://sudoku/universal_group.tres" id="2_hwjxj"]
+
+[node name="Grid 0" type="GridContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 3
+
+[node name="NumberSlot 0" parent="." instance=ExtResource("1_tbst7")]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("2_hwjxj")
+
+[node name="NumberSlot 1" parent="." instance=ExtResource("1_tbst7")]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("2_hwjxj")
+
+[node name="NumberSlot 2" parent="." instance=ExtResource("1_tbst7")]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("2_hwjxj")
+
+[node name="NumberSlot 3" parent="." instance=ExtResource("1_tbst7")]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("2_hwjxj")
+
+[node name="NumberSlot 4" parent="." instance=ExtResource("1_tbst7")]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("2_hwjxj")
+
+[node name="NumberSlot 5" parent="." instance=ExtResource("1_tbst7")]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("2_hwjxj")
+
+[node name="NumberSlot 6" parent="." instance=ExtResource("1_tbst7")]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("2_hwjxj")
+
+[node name="NumberSlot 7" parent="." instance=ExtResource("1_tbst7")]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("2_hwjxj")
+
+[node name="NumberSlot 8" parent="." instance=ExtResource("1_tbst7")]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("2_hwjxj")

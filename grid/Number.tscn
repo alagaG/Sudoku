@@ -1,9 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://wgsknohpt2lt"]
-
-[ext_resource type="Script" path="res://grid/number.gd" id="1_lqusf"]
-
-[node name="number" type="Button"]
-custom_minimum_size = Vector2(32, 32)
-offset_right = 8.0
-offset_bottom = 8.0
-script = ExtResource("1_lqusf")

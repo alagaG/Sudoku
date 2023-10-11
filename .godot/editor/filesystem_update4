@@ -1,5 +1,5 @@
-res://table/table.tscn
-res://table/table.gd
-res://grid/grid.tscn
-res://grid/Number.tscn
-res://game.tscn
+res://scenes/error_counter.tscn
+res://scenes/error_counter.gd
+res://scenes/game.tscn
+res://scenes/game.gd
+res://sudoku/table.gd

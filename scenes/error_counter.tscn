@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=3 uid="uid://chu2gljmjfbj"]
+
+[ext_resource type="Script" path="res://scenes/error_counter.gd" id="1_8vyj4"]
+
+[node name="ErrorCounter" type="HBoxContainer"]
+custom_minimum_size = Vector2(32, 32)
+theme_override_constants/separation = 5
+script = ExtResource("1_8vyj4")
+
+[node name="Life 1" type="CheckBox" parent="."]
+layout_mode = 2
+disabled = true
+button_pressed = true
+
+[node name="Life 2" type="CheckBox" parent="."]
+layout_mode = 2
+disabled = true
+button_pressed = true
+
+[node name="Life 3" type="CheckBox" parent="."]
+layout_mode = 2
+disabled = true
+button_pressed = true
+
+[node name="Life 4" type="CheckBox" parent="."]
+layout_mode = 2
+disabled = true
+button_pressed = true
+
+[node name="Life 5" type="CheckBox" parent="."]
+layout_mode = 2
+disabled = true
+button_pressed = true
